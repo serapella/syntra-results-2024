@@ -7,8 +7,10 @@
     "dev": "vite --open --host",
     "build" : "vite build",
     "preview" : "vite preview --open --host",
-    "deploy": "surge ./dist serapella.surge.sh",
-    "postdeploy": "start chrome https://serapella.surge.sh"
+    "deploy-main": "surge ./dist boorish-unit.surge.sh",
+    "deploy-developed": "surge ./dist boorish-unit.surge.sh",
+    "postdeploy-develeoped": "start chrome https://boorish-unit.surge.sh"
+
   },
   "keywords": [],
   "author": "",
