@@ -7,7 +7,7 @@
     "dev": "vite --open --host",
     "build" : "vite build",
     "preview" : "vite preview --open --host",
-    "deploy": "surege ./dist serapella.surge.sh",
+    "deploy": "surge ./dist serapella.surge.sh",
     "postdeploy": "start chrome https://serapella.surge.sh"
   },
   "keywords": [],

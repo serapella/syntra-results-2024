@@ -1,4 +1,5 @@
-@import url("https: //cdn.jsdelivr.net/npm/modern-css-reset@1.4.0/dist/reset.min.css");
+@import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Hind+Madurai&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@100..900&display=swap");
 
 :root {
   font-size: 62.5%;
@@ -14,11 +15,132 @@
   --GreenTeal: hsl(166, 100%, 37%);
   --CobaltBlue: hsl(234, 85%, 45%);
 }
-
 * {
   box-sizing: border-box;
+  margin: 0;
 }
-
-h1 {
-  background-color: var(--OrangeyYellow);
+main {
+  display: grid;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  section {
+    padding: 3rem;
+    &:nth-child(1) {
+      background-image: linear-gradient(
+        var(--LightSlateBlue),
+        var(--CobaltBlue)
+      );
+      border-radius: 0 0 3rem 3rem;
+      text-align: center;
+      color: white;
+      h1 {
+        color: var(--LightLavender);
+        font-weight: 700;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        margin: 3rem auto;
+        width: 45%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background-image: linear-gradient(
+          var(--VioletBlue),
+          var(--PersianBlue)
+        );
+        h3 {
+          font-size: 15vw;
+          font-weight: 800;
+        }
+        h4 {
+          color: var(--LightLavender);
+        }
+      }
+      h2 {
+        font-size: 2.3rem;
+        font-weight: 800;
+      }
+      p {
+        color: var(--LightLavender);
+        width: 70%;
+        margin: 1rem auto;
+        line-height: 2.1rem;
+      }
+    }
+    &:nth-child(2) {
+      h1 {
+        color: black;
+        font-weight: 700;
+      }
+      li {
+        padding: 1rem;
+        border-radius: 2rem;
+        margin: 3rem 0;
+        display: grid;
+        gap: 1.8rem;
+        display: flex;
+        gap: 1.5rem;
+        img {
+        }
+        p {
+          &:nth-of-type(1) {
+            margin-right: auto;
+          }
+          &:nth-of-type(2) {
+          }
+        }
+        &:nth-child(1) {
+          background-color: color-mix(
+            in hsl,
+            var(--LightRed) 20%,
+            transparent 20%
+          );
+        }
+        &:nth-child(2) {
+          background-color: color-mix(
+            in hsl,
+            var(--OrangeyYellow) 20%,
+            transparent 20%
+          );
+        }
+        &:nth-child(3) {
+          background-color: color-mix(
+            in hsl,
+            var(--GreenTeal) 20%,
+            transparent 20%
+          );
+        }
+        &:nth-child(4) {
+          background-color: color-mix(
+            in hsl,
+            var(--LightLavender) 20%,
+            transparent 20%
+          );
+        }
+      }
+    }
+  }
+}
+a {
+  display: block;
+  flex-direction: center;
+  padding: 2rem;
+  border-radius: 2.6rem;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background-color: var(--DarkGrayBlue);
+}
+a:hover {
+  background-image: linear-gradient(
+    var(--LightSlateBlue),
+    var(--LightRoyalBlue)
+  );
+  animation: fade 300ms 0 1s linear;
+  background-color: white;
+  color: var(--DarkGrayBlue);
+  font-size: 18px;
 }
