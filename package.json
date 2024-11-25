@@ -5,15 +5,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite --open --host",
-    "build" : "vite build",
-    "preview" : "vite preview --open --host",
+    "build": "vite build",
+    "preview": "vite preview --open --host",
     "deploy-main": "surge ./dist boorish-unit.surge.sh",
     "deploy-developed": "surge ./dist boorish-unit.surge.sh",
     "postdeploy-develeoped": "start chrome https://boorish-unit.surge.sh"
-
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "canvas-confetti": "^1.9.3"
+  }
 }
